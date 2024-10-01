@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Random;
 
 public class Nau {
     public static void main(String[] args) {
@@ -6,14 +7,14 @@ public class Nau {
         e.principal();
     }
 
-    public void principal(){
+    public void principal() {
 
-        ArrayList<habitaciones> mapa= new ArrayList<>(11);
-        
+        ArrayList<habitaciones> mapa = new ArrayList<>(11);
+        Random random = new Random();
         boolean jugar = true;
 
         while (!jugar) {
-            
+
         }
 
     }
