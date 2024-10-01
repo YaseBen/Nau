@@ -1,0 +1,61 @@
+public class Habitaciones {
+    private String nombre;
+    boolean eina = true;
+    boolean donuts = true;
+    boolean vestitEspacial = true;
+    Random rand = new Random();
+    int num = rand.nextInt(0, 6);
+    Objectes Objecte[] = new Objectes[num];
+    public Habitaciones(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+}
+
+public class MapaHabitaciones {
+    ArrayList<Habitaciones> mapa = new ArrayList<>(10);
+    int posicioActual;
+
+    public MapaHabitaciones() {
+        public static void main(String[] args) {
+            // Inicialitzem l'ArrayList amb capacitat per a 10 elements, però encara està buida.
+            ArrayList<Habitaciones> mapa = new ArrayList<>(10);
+    
+            // Afegim 10 habitacions a la llista
+            for (int i = 0; i < 10; i++) {
+                mapa.add(new Habitaciones("Habitación " + (i + 1)));
+            }
+    
+            // Mostrem les habitacions
+            for (Habitaciones habitacion : mapa) {
+                System.out.println(habitacion.getNombre());
+            }
+        }
+
+    // Moure cap a la dreta
+    public void moureDreta() {
+        if (posicioActual < mapa.size() - 1) {
+            posicioActual++;
+            System.out.println("Et mous a la dreta. Estàs a: " + mapa.get(posicioActual).getNombre());
+        } else {
+            System.out.println("No pots moure't més a la dreta.");
+        }
+    }
+
+    // Moure cap a l'esquerra
+    public void moureEsquerra() {
+        if (posicioActual > 0) {
+            posicioActual--;
+            System.out.println("Et mous a l'esquerra. Estàs a: " + mapa.get(posicioActual).getNombre());
+        } else {
+            System.out.println("No pots moure't més a l'esquerra.");
+        }
+    }
+
+    // Obtenir la posició actual
+    public void mostrarPosicioActual() {
+        System.out.println("Estàs a: " + mapa.get(posicioActual).getNombre());
+    } }
