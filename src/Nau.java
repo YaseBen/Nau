@@ -10,11 +10,10 @@ public class Nau {
     }
 
     public void principal() {
-
-        ArrayList<Habitaciones> mapa = new ArrayList<>(10);
+        Habitaciones miHabitacion = new Habitaciones();
+        ArrayList<Habitaciones> mapa = new ArrayList<Habitaciones>(10);
         // Mostrem la posició inicial
-        mapa.mostrarPosicioActual();
-        // Movent-nos cap a la dreta i esquerra
+        mapa.mostrarPosicioActual();// Movent-nos cap a la dreta i esquerra
         mapa.moureDreta(); // Et mous a la dreta
         mapa.moureDreta(); // Et mous a la dreta
         mapa.moureEsquerra(); // Et mous a l'esquerra

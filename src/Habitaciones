@@ -1,5 +1,9 @@
 public class Habitaciones {
     private String nombre;
+    private String dreta;
+    private String equerra;
+    private String amunt;
+    private String abaix;
     boolean eina = true;
     boolean donuts = true;
     boolean vestitEspacial = true;
@@ -13,6 +17,19 @@ public class Habitaciones {
     public String getNombre() {
         return nombre;
     }
+    public String getDreta() {
+        return dreta;
+    }
+    public String getEsquerra() {
+        return equerra;
+    }
+    public String getAmunt() {
+        return amunt;
+    }
+    public String getAbaix() {
+        return nombre;
+    }
+    
 }
 
 public class MapaHabitaciones {
@@ -59,3 +76,4 @@ public class MapaHabitaciones {
     public void mostrarPosicioActual() {
         System.out.println("Estàs a: " + mapa.get(posicioActual).getNombre());
     } }
+    }
