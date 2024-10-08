@@ -12,8 +12,13 @@ public class Nau {
     public void principal() {
         Habitaciones miHabitacion = new Habitaciones();
         ArrayList<Habitaciones> mapa = new ArrayList<Habitaciones>(10);
+        for(int i=0; i<10;i++){
+            mapa = Habitaciones.Habitaciones(i);
+        }
         // Mostrem la posició inicial
-        ((Object) mapa).mostrarPosicioActual();// Movent-nos cap a la dreta i esquerra
+        mapa.mostrarPosicioActual(Habitaciones.getNombre(
+            
+        ));// Movent-nos cap a la dreta i esquerra
         mapa.moureDreta(); // Et mous a la dreta
         mapa.moureDreta(); // Et mous a la dreta
         mapa.moureEsquerra(); // Et mous a l'esquerra

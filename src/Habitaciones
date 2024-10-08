@@ -4,6 +4,7 @@ public class Habitaciones {
     private int equerra;
     private int amunt;
     private int abaix;
+    private String descripcio;
     boolean eina = true;
     boolean donuts = true;
     boolean vestitEspacial = true;
@@ -14,90 +15,64 @@ public class Habitaciones {
         this.nombre = nombre;
         if(getNombre() == 1){
             this.dreta = -1;
-        }else if(getNombre() == 2){
-            this.dreta = -1;
-        }else if(getNombre() == 3){
-            this.dreta = 1;
-        }else if(getNombre() == 4){
-            this.dreta = -1;
-        }else if(getNombre() == 5){
-            this.dreta = 1;
-        }else if(getNombre() == 6){
-            this.dreta = 1;
-        }else if(getNombre() == 7){
-            this.dreta = 1;
-        }else if(getNombre() == 8){
-            this.dreta = -1;
-        }else if(getNombre() == 9){
-            this.dreta = -1;
-        }else if(getNombre() == 10){
-            this.dreta = -1;
-        }
-
-        if(getNombre() == 1){
             this.esquerra = 1;
-        }else if(getNombre() == 2){
-            this.esquerra = 1;
-        }else if(getNombre() == 3){
-            this.esquerra = 1;
-        }else if(getNombre() == 4){
-            this.esquerra = -1;
-        }else if(getNombre() == 5){
-            this.esquerra = -1;
-        }else if(getNombre() == 6){
-            this.esquerra = -1;
-        }else if(getNombre() == 7){
-            this.esquerra = 1;
-        }else if(getNombre() == 8){
-            this.esquerra = -1;
-        }else if(getNombre() == 9){
-            this.esquerra = -1;
-        }else if(getNombre() == 10){
-            this.esquerra = -1;
-        }
-
-        if(getNombre() == 1){
             this.amunt= 1;
+            this.abaix = -1;
+            this.descripcio = "Dormitori";
         }else if(getNombre() == 2){
+            this.dreta = -1;
+            this.esquerra = 1;
             this.amunt = -1;
+            this.abaix = 1;
+            this.descripcio = "Banys";
         }else if(getNombre() == 3){
+            this.dreta = 1;
+            this.esquerra = 1;
             this.amunt= 1;
+            this.abaix= 1;
+            this.descripcio = "Oficines";
         }else if(getNombre() == 4){
+            this.dreta = -1;
+            this.esquerra = -1;
             this.amunt = -1;
+            this.abaix = 1;
+            this.descripcio = "Taller";
         }else if(getNombre() == 5){
+            this.dreta = 1;
+            this.esquerra = -1;
             this.amunt = -1;
+            this.abaix = 1;
+            this.descripcio = "Vestuari";
         }else if(getNombre() == 6){
+            this.dreta = 1;
+            this.esquerra = -1;
             this.amunt = 1;
+            this.abaix = -1;
+            this.descripcio = "Cuina";
         }else if(getNombre() == 7){
+            this.dreta = 1;
+            this.esquerra = 1;
             this.amunt = -1;
+            this.abaix = 1;
+            this.descripcio = "Menjador";
         }else if(getNombre() == 8){
+            this.dreta = -1;
+            this.esquerra = -1;
             this.amunt = 1;
+            this.abaix = 1;
+            this.descripcio = "Sala sortida exterior";
         }else if(getNombre() == 9){
+            this.dreta = -1;
+            this.esquerra = -1;
             this.amunt = 1;
+            this.abaix = -1;
+            this.descripcio = "Comandament";
         }else if(getNombre() == 10){
+            this.dreta = -1;
+            this.esquerra = -1;
             this.amunt = 1;
-        }
-
-        if(getNombre() == 1){
             this.abaix = -1;
-        }else if(getNombre() == 2){
-            this.abaix = 1;
-        }else if(getNombre() == 3){
-            this.abaix = 1;
-        }else if(getNombre() == 4){
-            this.abaix = 1;
-        }else if(getNombre() == 5){
-            this.abaix = 1;
-        }else if(getNombre() == 6){
-            this.abaix = -1;
-        }else if(getNombre() == 7){
-            this.abaix = 1;
-        }else if(getNombre() == 8){
-            this.abaix = 1;
-        }else if(getNombre() == 9){
-            this.abaix = -1;
-        }else if(getNombre() == 10){
-            this.abaix = -1;
+            this.descripcio = "Propulsors";
         }
     }
 
@@ -115,6 +90,9 @@ public class Habitaciones {
     }
     public int getAbaix() {
         return abaix;
+    }
+    public int getDescripcio() {
+        return descripcio;
     }
     
 }
