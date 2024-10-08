@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Random;
 
+
 public class Nau {
     Random rand = new Random();
 
@@ -10,6 +11,7 @@ public class Nau {
     }
 
     public void principal() {
+        
         Habitaciones miHabitacion = new Habitaciones();
         ArrayList<Habitaciones> mapa = new ArrayList<Habitaciones>(10);
         for(int i=0; i<10;i++){
